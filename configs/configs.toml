@@ -1,0 +1,44 @@
+
+[app]
+  enablecors = true
+  extranet = "http://localhost:8082"
+  protocoldeploypath = "/home/ehoney_proxy"
+  tokentraceapipath = "api/public/token/trace-alert"
+  uploadpath = "upload"
+  scriptpath = "scripts"
+  engineversion = "2.0"
+  webhook = ""
+
+[database]
+  dbhost = "192.168.3.27"
+  dbname = "sec_ehoneypot"
+  dbport = 3306
+  dbtype = "mysql"
+  dbuser = "root"
+  dbpassword = "Ehoney2021"
+
+[harbor]
+  apiversion = "v2"
+  harborproject = "ehoney"
+  harborurl = "http://cloud.docker.com"
+  user = "admin"
+  password = "xxx"
+
+[log]
+  callerkey = "caller"
+  level = "debug"
+  levelkey = "level"
+  logformatconsole = "console"
+  logformatjson = "json"
+  maxage = 7
+  maxbackups = 20
+  maxsize = 1
+  messagekey = "msg"
+  namekey = "logger"
+  stacktracekey = "stacktrace"
+  timekey = "time"
+
+[server]
+  apphost = "localhost"
+  httpport = 8082
+  runmode = "release"
